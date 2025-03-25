@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador da Lei de Ohm</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Simulador da Lei de Ohm</h1>
+            <p class="description">Entenda e calcule a Tensão, Corrente e Resistência com base na Lei de Ohm.</p>
+        </header>
+
+        <main>
+            <section class="calculator-section">
+                <h2>Calculadora Interativa</h2>
+                <p>Insira dois valores para calcular o terceiro:</p>
+
+                <div class="input-group">
+                    <label for="voltage">Tensão (V):</label>
+                    <input type="number" id="voltage" placeholder="Digite a tensão (V)">
+                </div>
+
+                <div class="input-group">
+                    <label for="current">Corrente (A):</label>
+                    <input type="number" id="current" placeholder="Digite a corrente (A)">
+                </div>
+
+                <div class="input-group">
+                    <label for="resistance">Resistência (Ω):</label>
+                    <input type="number" id="resistance" placeholder="Digite a resistência (Ω)">
+                </div>
+
+                <button class="calculate-btn" onclick="calculateOhm()">Calcular</button>
+
+                <p id="result" class="result"></p>
+            </section>
+
+            <section class="explanation-section">
+                <h2>O que é a Lei de Ohm?</h2>
+                <p>A Lei de Ohm é um princípio fundamental da eletricidade que descreve a relação entre a tensão (V), corrente (I) e resistência (R) em um circuito elétrico. Ela estabelece que a corrente elétrica que passa por um condutor é diretamente proporcional à tensão aplicada e inversamente proporcional à resistência do condutor.</p>
+                <p>A fórmula matemática da Lei de Ohm é:</p>
+                <div class="formula">
+                    <p class="formula-text">V = I × R</p>
+                    <p>Onde:</p>
+                    <ul>
+                        <li><strong>V</strong> é a Tensão (em Volts)</li>
+                        <li><strong>I</strong> é a Corrente (em Amperes)</li>
+                        <li><strong>R</strong> é a Resistência (em Ohms)</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="applications-section">
+                <h2>Aplicações da Lei de Ohm</h2>
+                <p>A Lei de Ohm é essencial em várias áreas da engenharia e da eletrônica, sendo aplicada em projetos de circuitos, análise de consumo de energia e na construção de dispositivos eletrônicos. Algumas de suas aplicações incluem:</p>
+                <ul>
+                    <li>Projeto de circuitos elétricos</li>
+                    <li>Dimensionamento de resistores</li>
+                    <li>Análise de dissipação de energia em componentes</li>
+                    <li>Determinação do consumo de energia em dispositivos eletrônicos</li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2024 Simulador da Lei de Ohm - Projeto Educacional</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
